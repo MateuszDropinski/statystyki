@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="column">
+          <div class="cube-container">
+               <div class="cube">
+                   <div class="front">
+                       <p>1</p>
+                   </div>
+                   <div class="back">
+                       <p>6</p>
+                   </div>
+                   <div class="right">
+                       <p>2</p>
+                   </div>
+                   <div class="left">
+                       <p>5</p>
+                   </div>
+                   <div class="top">
+                       <p>4</p>
+                   </div>
+                   <div class="bottom">
+                       <p>3</p>
+                   </div>
+               </div>
+           </div>
+           <button class="throw">Rzuć kostką</button>
+      </div>
+      <div class="column">
+          <svg width="480" height="360" class="line-chart-container">
+              <g class="chart-elements" stroke-width="2px" stroke="black">
+                  <g stroke-width=".5">
+                      <line x1='50' x2='450' y1='72' y2='72'  />
+                      <line x1='50' x2='450' y1='115' y2='115' />
+                      <line x1='50' x2='450' y1='158' y2='158' />
+                      <line x1='50' x2='450' y1='201' y2='201' />
+                      <line x1='50' x2='450' y1='244' y2='244' />
+                      <line x1='50' x2='450' y1='287' y2='287' />
+                    </g>            
+                  <line x1='50' x2='50' y1='29' y2='330'  />
+                  <line x1='50' x2='450' y1='330' y2='330' />
+                  <g class="chart-y-values" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                      <text x="30" y="72" dy="3">6</text>
+                      <text x="30" y="115" dy="3">5</text>
+                      <text x="30" y="158" dy="3">4</text>
+                      <text x="30" y="201" dy="3">3</text>
+                      <text x="30" y="244" dy="3">2</text>
+                      <text x="30" y="287" dy="3">1</text>
+                  </g>   
+                  <g class="chart-x-values" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                      
+                  </g>          
+                  <g class="points" fill="black" stroke-width='0' >
+                  </g>
+                  <g class="lines" stroke="black" stroke-width='2'>
+                  </g>
+                </g>        
+           </svg>
+      </div>
+      <div class="column">
+            <svg width="480" height="360" class="column-chart-container">
+                <g class="chart-elements" stroke-width="2px" stroke="black">
+                    <g stroke-width=".5">
+                        <line x1='50' x2='450' y1='72' y2='72'  />
+                        <line x1='50' x2='450' y1='201' y2='201' />
+                    </g>            
+                    <line x1='50' x2='50' y1='29' y2='330'  />
+                    <line x1='50' x2='450' y1='330' y2='330' />
+                    <g class="chart-y-values" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                    </g> 
+                    <g class="chart-y-values" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                        <text x="107" y="350">1</text>
+                        <text x="164" y="350">2</text>
+                        <text x="221" y="350">3</text>
+                        <text x="278" y="350">4</text>
+                        <text x="335" y="350">5</text>
+                        <text x="392" y="350">6</text>  
+                    </g> 
+                    <g class="rectangles" stroke="black" stroke-width='2' full='blue' > 
+                    </g>
+
+                </g>        
+            </svg>
+      </div>
+      <div class="column">
+           <svg width="480" height="360" class="pie-chart-container">
+               <g class="chart-values" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                    <text x="47" y="50">1</text>
+                    <text x="104" y="50">2</text>
+                    <text x="161" y="50">3</text>
+                    <text x="218" y="50">4</text>
+                    <text x="275" y="50">5</text>
+                    <text x="332" y="50">6</text>  
+                </g> 
+                <g class="chart-rectangles" font-family="calibri" font-size="16" text-anchor="middle" stroke-width=".5">
+                    <rect x="57" y="35" width="20" height="20" fill="#de6a6a"/>
+                    <rect x="114" y="35" width="20" height="20" fill="#73de6a"/>
+                    <rect x="171" y="35" width="20" height="20" fill="#bf6ade"/>
+                    <rect x="228" y="35" width="20" height="20" fill="#6a6ade"/>
+                    <rect x="285" y="35" width="20" height="20" fill="#6ad1de"/>
+                    <rect x="342" y="35" width="20" height="20" fill="#dede6a"/>
+                </g>
+                <g class="pie-chart">
+                    <circle cx="200" cy="200" r="100" fill="white"/>
+                </g>      
+                <g class="pie-elements">
+                </g>
+            </svg>
+      </div>
+       
+   </div>
+    
+   
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
